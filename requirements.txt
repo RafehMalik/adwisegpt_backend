@@ -1,0 +1,40 @@
+
+# Core Django
+Django==5.2.8
+django-cloudinary-storage==0.3.0
+django-cors-headers==4.9.0
+djangorestframework==3.16.1
+djangorestframework_simplejwt==5.5.1
+
+# Storage & Media
+cloudinary==1.44.1
+
+# Database
+mysql-connector-python==9.5.0
+
+# Config
+python-decouple==3.8
+
+# LLM & AI (langchain, embeddings)
+pydantic==2.12.5
+langchain-core==1.2.7
+langchain-google-genai==4.2.0
+langchain-huggingface==1.2.0
+
+# Vector DB & Retrieval
+pinecone==8.0.0
+
+# ML / Embeddings
+numpy==2.4.1
+scikit-learn==1.8.0
+
+# Async
+adrf==0.1.12
+asgiref==3.11.0
+
+# Auth (Google OAuth)
+google-auth==2.48.0
+
+# Scheduling
+APScheduler==3.11.2
+pillow==12.1.1

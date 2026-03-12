@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+testenv
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media
+/staticfiles
+/static
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# FAISS Index files (can be regenerated)
+faiss_store/*.faiss
+faiss_store/*.pkl
+ad_id_mapping.pkl
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Production
+*.pem
+*.key
+
+# OS
+Thumbs.db
+
+requirement.txt
+db_test.py
+
+media
+
+notes.txt
