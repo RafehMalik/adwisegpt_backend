@@ -136,11 +136,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        # 'NAME': 'adwisegpt_db',
-        # 'USER': 'adwise_user',
-        # 'PASSWORD': 'StrongPassword123!',
-        # 'HOST': '127.0.0.1',
-        # 'PORT': '3306'
         'NAME': config('NAME'),
         'USER':config('USER'),
         'PASSWORD':config('PASSWORD'),
@@ -163,8 +158,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'adwisegpt@gmail.com'  # replace with your Gmail
-# EMAIL_HOST_PASSWORD = 'fwftwmnkukubkmek'  # see step 2
 EMAIL_HOST_PASSWORD=config('EMAIL_HOST_PASSWORD')
 EMAIL_HOST_USER=config('EMAIL_HOST_USER')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
@@ -180,7 +173,6 @@ SIMPLE_JWT = {
 }
 
 #google login
-#GOOGLE_CLIENT_ID = "177022522100-9je7n6jaapr7erv7sgtnagpg73arucvj.apps.googleusercontent.com"
 GOOGLE_CLIENT_ID=config('GOOGLE_CLIENT_ID')
 
 
@@ -211,8 +203,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 SITE_URL = 'http://localhost:8000'  # Change in production
 
 
-
-
 import os
 FAISS_INDEX_DIR = os.path.join(BASE_DIR, 'faiss_store')
 
@@ -234,8 +224,6 @@ GOOGLE_API_KEY = config('GOOGLE_API_KEY', default='')
 
 TIME_ZONE = 'Asia/Karachi'  # Or your timezone
 USE_TZ = True
-
-
 
 LOGGING = {
     'version': 1,
@@ -294,7 +282,6 @@ REST_FRAMEWORK = {
         'password_reset':  '5/hour',
         'otp_confirm':     '10/hour',
         'google_auth':     '10/min',
-
     }
 
 }
